@@ -1,0 +1,51 @@
+// PHONE
+@mixin phone {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+// TABLET AND PHONE
+@mixin tablet-phone {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+// TABLET EXCLUSIVE
+@mixin tablet {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+// TABLET AND DESKTOP
+@mixin tablet-desktop {
+  @media only screen and (min-width: 767px) {
+    @content;
+  }
+}
+
+// DESKTOP EXLUSIVE
+@mixin desktop {
+  @media only screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@mixin transition($speed: 150ms) {
+  transition: all $speed ease-in-out;
+}
+
+// Hex to rgba
+@mixin rgba-background($hexcolor, $opacity) {
+  background: $hexcolor;
+  background: rgba($hexcolor, $opacity);
+}
+@mixin rgba-color($hexcolor, $opacity) {
+  color: $hexcolor;
+  color: rgba($hexcolor, $opacity);
+}

@@ -1,0 +1,45 @@
+// Fonts - Set in Gatsby Config
+$webfont: "Source Sans Pro", sans-serif;
+$webfont2: "Alegreya", serif;
+
+// Colors
+$primary-color: #007ec1;
+$secondary-color: #021f30;
+$accent-color: #606a6f;
+
+@import "mixins";
+@import "reset";
+@import "modules/index";
+@import "layout/index";
+
+body {
+  background: #ddd;
+  font-family: $webfont;
+}
+
+#temp-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.btn {
+  background: $primary-color;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 100ms all ease-in-out;
+  &:hover {
+    background: $secondary-color;
+  }
+}

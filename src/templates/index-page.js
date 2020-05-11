@@ -5,6 +5,8 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import styles from "../styles/global.module.scss";
+import logo from "../img/logo.png";
 
 export const IndexPageTemplate = ({
   image,
@@ -131,17 +133,23 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      {/* <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-      /> */}
-      <h1>Welcome to my new portfolio</h1>
-      <p>Coming soon.</p>
+      <div id={styles.tempFlex}>
+        <Link to="/" className="navbar-item" title="Logo">
+          <img src={logo} alt="Kaldi" className={styles.logo} />
+        </Link>
+        <p>
+          New Gatsby JS portfolio coming soon. Until then, view my projects on
+          GitHub.
+        </p>
+        <a
+          href="https://github.com/JKarlavige?tab=repositories"
+          target="_blank"
+          title="GitHub: Jason Karlavige"
+          className={styles.btn}
+        >
+          View GitHub
+        </a>
+      </div>
     </Layout>
   );
 };

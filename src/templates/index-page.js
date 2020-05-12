@@ -2,11 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
-import Layout from "../components/Layout";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
+import Logo from "../components/Logo";
+import Layout from "../components/layout/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import styles from "../styles/global.module.scss";
-import logo from "../img/logo.png";
 
 export const IndexPageTemplate = ({
   image,
@@ -134,21 +135,18 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <div id={styles.tempFlex}>
-        <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="Kaldi" className={styles.logo} />
-        </Link>
         <p>
           New Gatsby JS portfolio coming soon. Until then, view my projects on
           GitHub.
         </p>
-        <a
+        <OutboundLink
           href="https://github.com/JKarlavige?tab=repositories"
           target="_blank"
           title="GitHub: Jason Karlavige"
           className={styles.btn}
         >
           View GitHub
-        </a>
+        </OutboundLink>
       </div>
     </Layout>
   );

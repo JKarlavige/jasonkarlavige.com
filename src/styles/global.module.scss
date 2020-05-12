@@ -25,9 +25,29 @@ body {
   min-height: 100vh;
   padding: 20px;
   text-align: center;
+  .temp-logo {
+    max-width: 300px;
+    width: 100%;
+  }
   p {
     font-size: 1.2rem;
   }
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  width: 300px;
 }
 
 .btn {

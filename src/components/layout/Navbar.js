@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link> */}
           <OutboundLink
             className={styles.navbarSocial}
-            href="https://github.com/JKarlavige/jasonkarlavige.com"
+            href="https://github.com/JKarlavige?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
           >

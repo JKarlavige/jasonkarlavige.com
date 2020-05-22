@@ -7,6 +7,7 @@ import Logo from "../components/Logo";
 import Layout from "../components/layout/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import Work from "../components/Work";
 import styles from "../styles/global.module.scss";
 
 export const IndexPageTemplate = ({
@@ -117,27 +118,28 @@ export const IndexPageTemplate = ({
   </div>
 );
 
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-};
+// IndexPageTemplate.propTypes = {
+//   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+//   title: PropTypes.string,
+//   heading: PropTypes.string,
+//   subheading: PropTypes.string,
+//   mainpitch: PropTypes.object,
+//   description: PropTypes.string,
+//   intro: PropTypes.shape({
+//     blurbs: PropTypes.array,
+//   }),
+// };
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  // const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
       <div id={styles.tempFlex}>
         <p>
-          New Gatsby JS portfolio coming soon. Until then, view my projects on
-          GitHub.
+          New Gatsby JS portfolio coming soon. Please view my projects below or
+          on GitHub. Code examples from private repos can be shared upon
+          request.
         </p>
         <OutboundLink
           href="https://github.com/JKarlavige?tab=repositories"
@@ -148,6 +150,7 @@ const IndexPage = ({ data }) => {
           View GitHub
         </OutboundLink>
       </div>
+      <Work />
     </Layout>
   );
 };
@@ -162,40 +165,40 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query IndexPageTemplate {
+//     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+//       frontmatter {
+//         title
+//         image {
+//           childImageSharp {
+//             fluid(maxWidth: 2048, quality: 100) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//         heading
+//         subheading
+//         mainpitch {
+//           title
+//           description
+//         }
+//         description
+//         intro {
+//           blurbs {
+//             image {
+//               childImageSharp {
+//                 fluid(maxWidth: 240, quality: 64) {
+//                   ...GatsbyImageSharpFluid
+//                 }
+//               }
+//             }
+//             text
+//           }
+//           heading
+//           description
+//         }
+//       }
+//     }
+//   }
+// `;

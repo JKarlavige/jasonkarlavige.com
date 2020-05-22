@@ -1,1 +1,11 @@
 @import "./header";
+
+.col-sm-half-z {
+  width: 50%;
+  margin: 0;
+  float: left;
+  @include phone {
+    width: 100%;
+    float: none;
+  }
+}

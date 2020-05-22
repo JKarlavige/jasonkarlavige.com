@@ -1,0 +1,257 @@
+/** Work **/
+.banner-work {
+  background: url(/img/work/trally/banner_bg.jpg);
+  background-size: cover;
+  background-position: 0 60%;
+}
+.portfolio-work {
+  padding-top: 0;
+}
+.portfolio-work-z {
+  padding: 0;
+}
+.portfolio-work h1 {
+  font-size: 1.75em;
+  padding-bottom: 10px;
+}
+.portfolio-section-header {
+  text-align: center;
+}
+.portfolio-piece {
+  padding: 0 !important;
+  height: 50vw;
+  max-height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:hover {
+    .portfolio-overlay {
+      opacity: 1;
+    }
+  }
+}
+.portfolio-piece:first-child {
+  margin-top: 0 !important;
+}
+.portfolio-piece.trally {
+  background: url(/img/work/trally/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.wellington {
+  background: url(/img/work/wellington/tb.jpg);
+  background-size: cover;
+  background-position: 0 20%;
+}
+.portfolio-piece.coastal {
+  background: url(/img/work/coastal_craft/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.cccafe {
+  background: url(/img/work/centercitycafe/cccc_portbg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.roverkayaks {
+  background: url(/img/work/roverkayaks/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.speedwaycollective {
+  background: url(/img/work/speedway/ipad-2.jpg);
+  background-size: cover;
+  background-position: center;
+  clear: both;
+}
+.portfolio-piece.ps {
+  background: url(/img/work/popularspeed/banner.jpg);
+  background-size: cover;
+  background-position: right;
+}
+.portfolio-piece.photography {
+  background: url(/img/work/photography/ohara.jpg);
+  background-size: cover;
+  background-position: 0 0;
+}
+.portfolio-piece.mywilkes {
+  background: url(/img/work/mywilkes/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.pyggbank {
+  background: url(/img/work/pyggbank/work_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.quinns {
+  background: url(/img/work/quinns/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.skyliners {
+  background: url(/img/work/skyliners/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.cqa {
+  background: url(/img/work/cqa/cqa_institute.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.flix {
+  background: url(/img/work/flix/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.diced {
+  background: url(/img/work/diced/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-piece.ups {
+  background: url(/img/work/ups/ups-0.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-piece a {
+  color: #fff;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.portfolio-piece a:link,
+.portfolio-piece a:visited {
+  color: #fff;
+}
+.portfolio-brand,
+.portfolio-brand-full,
+.portfolio-brand-lg {
+  position: absolute;
+  max-width: 175px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: 2;
+}
+.portfolio-brand-text {
+  color: #fff;
+  font-size: 120%;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 45%;
+  bottom: 0;
+}
+
+/** Portfolio Description Pieces **/
+.trally-overlay {
+  background: rgba(86, 118, 115, 0.75);
+}
+.wellington-overlay {
+  background: rgba(54, 43, 35, 0.75);
+}
+.coastal-overlay {
+  background: rgba(37, 216, 158, 0.75);
+}
+.cccafe-overlay {
+  background: rgba(138, 35, 37, 0.75);
+}
+.rover-overlay {
+  background: rgba(39, 110, 101, 0.75);
+}
+.sc-overlay {
+  background: rgba(50, 97, 216, 0.75);
+}
+#sc-img-overlay {
+  max-width: 250px;
+}
+.ps-overlay {
+  background: rgba(196, 19, 97, 0.5);
+}
+.photography-overlay {
+  background: rgba(45, 45, 45, 0.5);
+}
+.wilkes-overlay {
+  background: rgba(0, 51, 102, 0.5);
+}
+.pygg-overlay {
+  background: rgba(240, 76, 72, 0.5);
+}
+.quinns-overlay {
+  background: rgba(96, 156, 64, 0.5);
+}
+.cqa-overlay {
+  background: rgba(96, 156, 64, 0.5);
+}
+.flix-overlay {
+  background: rgba(50, 225, 129, 0.5);
+}
+.diced-overlay {
+  background: rgba(136, 29, 45, 0.5);
+}
+.ups-overlay {
+  background: rgba(48, 21, 6, 0.8);
+}
+
+/** Portfolio Overlay Description **/
+.portfolio-overlay {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: 100ms all ease-in-out;
+}
+.description-content {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  left: 5px;
+  right: 0;
+  bottom: -20px;
+}
+.description-content h2 {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+.description-details-list,
+.description-details-list-f {
+}
+.description-details-list li,
+.description-details-list-f li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9em;
+  text-align: center;
+}
+.description-details-list li:after,
+.description-details-list-f li:after {
+  content: "\2022";
+  padding-left: 5px;
+}
+.description-details-list li:last-child:after,
+.description-details-list-f li:last-child:after {
+  content: "";
+  padding-right: 0;
+}
+
+.skyliners-mac {
+  display: none;
+}
+.skyliners-overlay {
+  background: rgba(100, 32, 33, 0.75);
+}

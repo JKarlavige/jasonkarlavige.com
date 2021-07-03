@@ -114,6 +114,11 @@
   background-size: cover;
   background-position: center;
 }
+.portfolio-piece.onebuilder {
+  background: url(/img/work/onebuilder/work_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 .portfolio-piece a {
   color: #fff;
@@ -200,6 +205,9 @@
 }
 .ups-overlay {
   background: rgba(48, 21, 6, 0.8);
+}
+.onebuilder-overlay {
+  background: rgba(35, 43, 64, 0.8);
 }
 
 /** Portfolio Overlay Description **/

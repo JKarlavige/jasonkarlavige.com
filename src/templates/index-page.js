@@ -135,12 +135,8 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Work />
       <div id={styles.tempFlex}>
-        <p>
-          New Gatsby JS portfolio coming soon. Please view my projects below or
-          on GitHub. Code examples from private repos can be shared upon
-          request.
-        </p>
         <OutboundLink
           href="https://github.com/JKarlavige?tab=repositories"
           target="_blank"
@@ -150,7 +146,6 @@ const IndexPage = ({ data }) => {
           View GitHub
         </OutboundLink>
       </div>
-      <Work />
     </Layout>
   );
 };
